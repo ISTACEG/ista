@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: "16"  # You can change the Node.js version as needed
+        node-version: "18"  # You can change the Node.js version as needed
 
     - name: Install dependencies
       run: npm install
@@ -33,6 +33,7 @@ jobs:
         mv -f dist/* .
         git add .
         git commit -m "Deploy to GitHub Pages"
+        git remote set-url origin https://github-actions:${{ secrets.PAT_TOKEN }}@github.com/ISTACEG/ista.git
         git push -f origin gh-pages
-
-  # You can add more jobs for testing, linting, etc. here if needed
+      env:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
