@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.16.0"
+    "preact": "^10.16.0",
+    "preact-async-route": "^2.2.1",
+    "preact-router": "^4.1.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
@@ -19,8 +21,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
-  "repository": { 
-  "type": "git", 
-  "url": "https://github.com/ISTACEG/ista.git" 
-} 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ISTACEG/ista.git"
+  }
 }

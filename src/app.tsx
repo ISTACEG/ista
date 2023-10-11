@@ -1,5 +1,24 @@
+import AsyncRoute from "preact-async-route";
+import Router, { Route } from "preact-router";
+
+function Home() {
+  return <h1>Hello</h1>
+}
+
+function About() {
+  return <h1>About</h1>
+}
+
+function Lazy() {
+  return <h1>Lazy</h1>
+}
+
 export function App() {
   return (
-    <h1 class="bg-black p-3 w-full text-white text-center text-xl">ISTA CEG WEBSITE</h1>
+    <Router>
+      <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <AsyncRoute path="/lazy" component={Lazy} />
+    </Router>
   )
 }
