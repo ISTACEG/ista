@@ -10,7 +10,7 @@ const About = () => {
         </li>
         <li>
           Tailwind css is included inline and you can refer to tailwind
-          documenetation for the nitty gritties.{" "}
+          documenetation for the nitty gritties.
         </li>{" "}
         <li>
           For general react syntax you can refer to w3schools syntax. Basically
