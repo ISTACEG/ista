@@ -13,13 +13,13 @@ export function App() {
       <>
         <NavBar />
         <Router>
-          <Route path="/" component={Dashboard} />
-          <Route path="/about" component={About} />
-          <Route path="/team" component={Team} />
-          <Route path="/itrix" component={Itrix} />
-          <Route path="/iplus" component={Iplus} />
-          <Route path="/placement" component={Placement} />
-          <Route path="/events" component={Events} />
+          <Route path={`${import.meta.env.BASE_URL}`} component={Dashboard} />
+          <Route path={`${import.meta.env.BASE_URL}/about`} component={About} />
+          <Route path={`${import.meta.env.BASE_URL}/team`} component={Team} />
+          <Route path={`${import.meta.env.BASE_URL}/itrix`} component={Itrix} />
+          <Route path={`${import.meta.env.BASE_URL}/iplus`} component={Iplus} />
+          <Route path={`${import.meta.env.BASE_URL}/placement`} component={Placement} />
+          <Route path={`${import.meta.env.BASE_URL}/events`} component={Events} />
         </Router>
        </>
   );
