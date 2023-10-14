@@ -5,6 +5,6 @@ import preact from '@preact/preset-vite'
 export default defineConfig( ({mode}) => {
   return {
     plugins: [preact()],
-    base: mode == "production" ? "/vite" : ""
+    base: mode == "production" ? "/ista" : ""
   }
 })
